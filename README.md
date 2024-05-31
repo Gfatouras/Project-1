@@ -58,7 +58,3 @@ Small market.
 
 Complete destruction of the aircraft is significantly more common.
 
-
-        Three visualizations (the same visualizations presented in the slides and notebook)
-    Conclusion
-        Summary of conclusions including three relevant findings
