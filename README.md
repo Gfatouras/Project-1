@@ -25,7 +25,6 @@ United States and international waters.
 ### All flight purposes vs. skydiving
 ![image](https://github.com/Gfatouras/Project-1/assets/165408353/47120ee2-5a69-4e8c-9e50-b283d75877a5)
 
-
 # Conclusion
 ## Airplane Business Flights
 Models to consider:
@@ -58,7 +57,5 @@ Small market.
 
 Complete destruction of the aircraft is significantly more common.
 
-
-        Three visualizations (the same visualizations presented in the slides and notebook)
-    Conclusion
-        Summary of conclusions including three relevant findings
+## Tableau Public link:
+https://public.tableau.com/app/profile/greg.fatouras/viz/FlightDataAnalysis_17171688446760/Dashboard1?publish=yes
