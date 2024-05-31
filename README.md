@@ -1,7 +1,11 @@
 
 #    Overview
-We analyzed plane crash data from 1962 to 2023 to identify
-the risk associated with various flight purposes to create business proposals.
+
+This project aims to support the development of a new aviation business line by providing three business recommendations based on thorough data analysis. The objective is to identify the lowest-risk aircraft makes and models for the company to consider for its new aviation ventures.
+
+The presented analysis focuses on key variables such as aircraft make and model, fatalities, time of accidents and accident locations. By addressing missing data, interpreting and visualizing the information, the analysis seeks to offer data-driven insights.
+
+The findings will help the company mitigate potential risks and make informed decisions about aircraft purchases, ensuring a safe and strategic entry into the aviation market.
 ##    Business Understanding
 Which fligh purpose has the least risk? 
 Which flight purpose has the highest market share? 
