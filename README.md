@@ -61,5 +61,6 @@ Small market.
 
 Complete destruction of the aircraft is significantly more common.
 
-## Tableau Public link:
+## Tableau Public and GitHub repo links:
 https://public.tableau.com/app/profile/greg.fatouras/viz/FlightDataAnalysis_17171688446760/Dashboard1?publish=yes
+https://github.com/Gfatouras/Project-1
