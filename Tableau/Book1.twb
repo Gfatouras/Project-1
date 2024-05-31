@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20241.24.0425.1340                               -->
-<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
     <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
     <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
@@ -16,8 +18,8 @@
     <SortTagCleanup />
     <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
-    <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='FlightDataAnalysis_17171688446760' path='/workbooks' revision='1.2' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -32,7 +34,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Aviation_data_clean' name='textscan.0vjrhus1uivtuw15g7u2j1oo3dxv'>
-            <connection class='textscan' directory='C:/Users/Greg/Desktop/flatiron/Project1' filename='Aviation_data_clean.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/Greg/Desktop/flatiron/Project1' filename='Aviation_data_clean.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0vjrhus1uivtuw15g7u2j1oo3dxv' name='Aviation_data_clean.csv' table='[Aviation_data_clean#csv]' type='table'>
@@ -414,11 +416,15 @@
       </connection>
       <aliases enabled='yes' />
       <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Engine Type]' role='dimension' type='nominal' />
       <column datatype='string' name='[Injury Severity]' role='dimension' type='nominal' />
       <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
       <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[Purpose Of Flight]' role='dimension' type='nominal' />
       <_.fcp.ObjectModelTableType.true...column caption='Aviation_data_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' role='measure' type='quantitative' />
+      <column-instance column='[Engine Type]' derivation='None' name='[none:Engine Type:nk]' pivot='key' type='nominal' />
       <column-instance column='[Injury Severity]' derivation='None' name='[none:Injury Severity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Purpose Of Flight]' derivation='None' name='[none:Purpose Of Flight:nk]' pivot='key' type='nominal' />
       <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
         <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Greg/AppData/Local/Temp/TableauTemp/#TableauTemp_1t84zip0nzg7os1ex3ocz0qfg1zf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/30/2024 06:23:37 PM' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
@@ -775,6 +781,94 @@
               <bucket>&quot;Non-Fatal&quot;</bucket>
             </map>
           </encoding>
+          <encoding attr='color' field='[none:Purpose Of Flight:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Business&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Public Aircraft - Federal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Air Race show&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Skydiving&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Firefighting&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Executive/corporate&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Air Race/show&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Positioning&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Aerial Application&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Public Aircraft - Local&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Other Work Use&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ASHO&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Flight Test&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Glider Tow&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Personal&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Public Aircraft&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;External Load&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Banner Tow&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Aerial Observation&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Public Aircraft - State&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Instructional&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ferry&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Air Drop&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;PUBS&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Engine Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Turbo Prop&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Reciprocating&quot;</bucket>
+            </map>
+          </encoding>
         </style-rule>
       </style>
       <semantic-values>
@@ -924,7 +1018,7 @@
       </table>
       <simple-id uuid='{CD7214CC-AE04-461E-A0C5-33E8353CC979}' />
     </worksheet>
-    <worksheet name='Purpose of Flight vs. Year'>
+    <worksheet name='Flight Purposes'>
       <table>
         <view>
           <datasources>
@@ -939,12 +1033,16 @@
             <column-instance column='[Purpose Of Flight]' derivation='None' name='[none:Purpose Of Flight:nk]' pivot='key' type='nominal' />
             <column-instance column='[Event Date]' derivation='Year' name='[yr:Event Date:ok]' pivot='key' type='ordinal' />
           </datasource-dependencies>
-          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' included-values='in-range' />
           <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]'>
-            <groupfilter function='member' level='[none:Purpose Of Flight:nk]' member='&quot;Skydiving&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Purpose Of Flight:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Purpose Of Flight:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:Purpose Of Flight:nk]' member='&quot;Unknown&quot;' />
+              </groupfilter>
+            </groupfilter>
           </filter>
           <slices>
-            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]</column>
             <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</column>
           </slices>
           <aggregation value='true' />
@@ -957,21 +1055,91 @@
             </view>
             <mark class='Automatic' />
             <encodings>
-              <color column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' />
-              <lod column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' />
+              <color column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]' />
             </encodings>
-            <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='false' />
-              </style-rule>
-            </style>
           </pane>
         </panes>
         <rows>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]</rows>
         <cols>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[yr:Event Date:ok]</cols>
       </table>
-      <simple-id uuid='{881FD0C4-72D7-44C4-A6E4-8BB7A3A2E89F}' />
+      <simple-id uuid='{A7C28CE5-A8F8-4087-A45A-3FCF9864D1C4}' />
+    </worksheet>
+    <worksheet name='Skydiving Engine Fatalities'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Aviation_data_clean' name='federated.0sgqnh40fwq0du1fkepnz14dndrr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0sgqnh40fwq0du1fkepnz14dndrr'>
+            <column datatype='string' name='[Engine Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Injury Severity]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number Of Engines]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Purpose Of Flight]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Minor Injuries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Serious Injuries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Uninjured]' role='measure' type='quantitative' />
+            <column-instance column='[Engine Type]' derivation='None' name='[none:Engine Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Injury Severity]' derivation='None' name='[none:Injury Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Purpose Of Flight]' derivation='None' name='[none:Purpose Of Flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number Of Engines]' derivation='Sum' name='[sum:Number Of Engines:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Minor Injuries]' derivation='Sum' name='[sum:Total Minor Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Serious Injuries]' derivation='Sum' name='[sum:Total Serious Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Uninjured]' derivation='Sum' name='[sum:Total Uninjured:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Number Of Engines:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Minor Injuries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Serious Injuries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Uninjured:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Engine Type:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Engine Type:nk]' />
+              <groupfilter function='member' level='[none:Engine Type:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]'>
+            <groupfilter function='member' level='[none:Purpose Of Flight:nk]' member='&quot;Skydiving&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Number Of Engines:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[:Measure Names]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Engine Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]' value='132' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Engine Type:nk]' />
+              <lod column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Engine Type:nk] * [federated.0sgqnh40fwq0du1fkepnz14dndrr].[Multiple Values])</rows>
+        <cols>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]</cols>
+      </table>
+      <simple-id uuid='{396BABB8-F91D-4406-A00D-AFE6A9E6010D}' />
     </worksheet>
     <worksheet name='Skydiving Fatalities'>
       <table>
@@ -1069,18 +1237,11 @@
     <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
       <style />
       <size minheight='560' minwidth='420' sizing-mode='range' />
-      <datasources>
-        <datasource caption='Aviation_data_clean' name='federated.0sgqnh40fwq0du1fkepnz14dndrr' />
-      </datasources>
-      <datasource-dependencies datasource='federated.0sgqnh40fwq0du1fkepnz14dndrr'>
-        <column caption='Aviation_data_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' role='measure' type='quantitative' />
-        <column-instance column='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' pivot='key' type='quantitative' />
-      </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='49217' id='9' param='horz' type-v2='layout-flow' w='99318' x='341' y='635'>
-            <zone h='49217' id='7' type-v2='layout-basic' w='92507' x='341' y='635'>
-              <zone h='49217' id='3' name='Skydiving Fatalities' w='46254' x='341' y='635'>
+          <zone h='49365' id='9' param='horz' type-v2='layout-flow' w='49805' x='341' y='635'>
+            <zone h='49365' id='7' type-v2='layout-basic' w='49805' x='341' y='635'>
+              <zone h='49365' id='3' name='Skydiving Fatalities' w='24901' x='341' y='635'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1088,25 +1249,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49217' id='5' name='All Other Fatalities' w='46253' x='46595' y='635'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-            </zone>
-            <zone fixed-size='160' h='49217' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='6811' x='92848' y='635'>
-              <zone h='5476' id='10' name='Purpose of Flight vs. Year' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='6811' x='92848' y='635'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='5159' id='11' name='Purpose of Flight vs. Year' pane-specification-id='0' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' type-v2='color' w='6811' x='92848' y='6111'>
+              <zone h='49365' id='5' name='All Other Fatalities' w='24904' x='25242' y='635'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1116,7 +1259,31 @@
               </zone>
             </zone>
           </zone>
-          <zone h='49513' id='6' name='Purpose of Flight vs. Year' w='99318' x='341' y='49852'>
+          <zone h='49365' id='18' name='Flight Purposes' w='42994' x='341' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98730' id='16' name='Skydiving Engine Fatalities' w='42702' x='50146' y='635'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49365' id='19' name='Flight Purposes' pane-specification-id='0' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]' type-v2='color' w='6811' x='43335' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98730' id='17' name='Skydiving Engine Fatalities' pane-specification-id='3' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Engine Type:nk]' type-v2='color' w='6811' x='92848' y='635'>
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -1134,11 +1301,11 @@
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98730' id='12' param='vert' type-v2='layout-flow' w='99318' x='341' y='635'>
-                <zone fixed-size='267' h='49217' id='3' is-fixed='true' name='Skydiving Fatalities' w='46254' x='341' y='635'>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98730' id='24' param='vert' type-v2='layout-flow' w='99318' x='341' y='635'>
+                <zone fixed-size='268' h='49365' id='3' is-fixed='true' name='Skydiving Fatalities' w='24901' x='341' y='635'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1147,7 +1314,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='267' h='49217' id='5' is-fixed='true' name='All Other Fatalities' w='46253' x='46595' y='635'>
+                <zone fixed-size='268' h='49365' id='5' is-fixed='true' name='All Other Fatalities' w='24904' x='25242' y='635'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1156,7 +1323,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='5476' id='10' name='Purpose of Flight vs. Year' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='6811' x='92848' y='635'>
+                <zone fixed-size='280' h='98730' id='16' is-fixed='true' name='Skydiving Engine Fatalities' w='42702' x='50146' y='635'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1165,7 +1332,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='269' h='49513' id='6' is-fixed='true' name='Purpose of Flight vs. Year' w='99318' x='341' y='49852'>
+                <zone h='98730' id='17' name='Skydiving Engine Fatalities' pane-specification-id='3' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Engine Type:nk]' type-v2='color' w='6811' x='92848' y='635'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1174,7 +1341,16 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='5159' id='11' name='Purpose of Flight vs. Year' pane-specification-id='0' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' type-v2='color' w='6811' x='92848' y='6111'>
+                <zone fixed-size='268' h='49365' id='18' is-fixed='true' name='Flight Purposes' w='42994' x='341' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='49365' id='19' name='Flight Purposes' pane-specification-id='0' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]' type-v2='color' w='6811' x='43335' y='50000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1264,7 +1440,7 @@
       </viewpoint>
       <simple-id uuid='{414E24BC-02B8-4EED-A5E3-5974545E2321}' />
     </window>
-    <window class='worksheet' name='Purpose of Flight vs. Year'>
+    <window class='worksheet' name='Flight Purposes'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1286,8 +1462,7 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
-            <card pane-specification-id='0' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]' type='color' />
           </strip>
         </edge>
       </cards>
@@ -1299,21 +1474,72 @@
           </color-one-way>
         </highlight>
       </viewpoint>
-      <simple-id uuid='{64B1567E-83C7-4A69-B136-D46CCF1B4651}' />
+      <simple-id uuid='{8F252FFB-22BF-4F76-BE89-756FFD98CD95}' />
+    </window>
+    <window class='worksheet' name='Skydiving Engine Fatalities'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Engine Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Engine Type:nk]</field>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]</field>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6F70FB6D-D88F-43AF-B742-2D142265C504}' />
     </window>
     <window class='dashboard' maximized='true' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='All Other Fatalities'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='Purpose of Flight vs. Year'>
+        <viewpoint name='Flight Purposes'>
           <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Skydiving Engine Fatalities'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Engine Type:nk]</field>
+            </color-one-way>
+          </highlight>
         </viewpoint>
         <viewpoint name='Skydiving Fatalities'>
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='6' />
+      <active id='-1' />
       <simple-id uuid='{FFE22EE3-06A0-4786-914D-48F8F4F075FC}' />
     </window>
   </windows>
@@ -1397,141 +1623,210 @@
     </thumbnail>
     <thumbnail height='192' name='Dashboard 1' width='192'>
       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
-      AAANgUlEQVR4nO3d6VJbaX7H8e+RBBJikRAgg22Ml7Zx2+ANepnqSs30dKcmeZF3qXmXO8g1
-      5BZyBalKVS4gk0xVpibJTHemF7fbYHcbY/ZdIISwQEhoP+fkhTtO0+NF2EhYfn6f8gvbaPkf
-      4FtHR9KjY7mu6yJiKM9xDyBynBSAGE0BiNEUgBhNAYjRDgSQ3Fjh7t0xFlfjTEw+eu6VJh9N
-      4JbzJHcyT//PdV2SyeQL72x+eoLx8XHW4j+6nOuSTu8dvKDrMPlwit3HSUq2S3pvD3j57Ysc
-      lu/H//h+cpZffPIpHlxu31khv7dNcnefihUk2lIk19zF2vQDZlZiXLl4lkK+zHJ6lTMnO4lt
-      l8ApMvfoIZlCkc7oKTq8JRZiSSLRXt4ZOMVafIuPP/4EXJe5qQlSmSKX3hngt7/9PT//9C+x
-      s9skd3NcH7nFXnqPzlA7Dgn+/T/+m08+/Suw8xSyKb6fnOfUwAXs/W2SOxmuXh+lpem4voXS
-      yA7sAf7io/f59vaX3JuYYX93m//8Ypz+/jMszT7gu8kFdme/o/fqLc719+KWs6xv7rG6uszU
-      g4d0RMKsxWIkU3vcunmLzZVlHs0v8/7oTRIbMQAqhX3Gx8dZ30ph2zbFx4usZpu5+M5FBk5G
-      qdg2bmaDB4vbAGzEYgQ7e7h48RL9fd3EYmt8/acv8Xg9fHPnG5LJLRzXg8+rlzLk1RwIYH0t
-      RrO/hUIhR2u4m+sXeplejnOmK8iu00x3NMLEt3dYWd96ep3z0TZmdxxCfgsAy/r/m2xyy4zd
-      u0+2UAbAF2hlZGSEkz1h5hcW8Pv9OK7L/t42K+sJ5hYWaPb7cZwf/UJbFtlUgrX4kyhOn+nH
-      cVyuXbtGpDNCeS/OQvwnD6FEqmS97JVg13X59vPfcerGLzndGTjUja8uzpBI7uBpjTAydOm1
-      BhWphZcGIPI209OgYjQFIEZTAGI0BSDP4XD//v0nf7OLpPdyf3YJ16nw1Z8+f/oM3U/ZlQLJ
-      9TUSu/maTvo6dBAsz+Hw2R/+i+xuBl/Qj5Ur0XvhLDOxFJd7g6zE9/jol58QmxpnYmmHfD7D
-      5bMnqOR2uD8V48zAWQYvn2TlwQLuiX5aCtucHHyPK+d7j3vDDvC9/CJiJouz5y7g8/lJrE5R
-      CZ8ilyswfOUyF3vbWU7cJdLiIebxcvlCP3i9dLdZBNqu0tKxQLg7ytmBbsLBHlLZPEuzmwye
-      e7N++eGI9gCu62JZ1lHMI1JXR3IM4DjOUdyMSN1V/RCoUtxncuIBzW1RHK9F0FMhU3AYevcS
-      juOgQwlpRNUfA1hNtHe0UvH4yCYTeHujtAddPB4Pruvi9XprOKZIbVQdgGU5uN52zp7uIR5o
-      pjfSxl5BD32ksR3JQbBt29oDSEPSC2FitLq8DvD9QoJ/+KfP6nFXNfF3v7rG3/78ynGPITWg
-      PYAYTQGI0RSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEUgBit6gCcSomFxWVsu8T6RoJi
-      LkMyla7lbCI1V/Wb4Vws7HyKhzMVulu8LCbyBHDpCre/dEWYY9tHMuxxcR2XSqVy3GNIDVS/
-      JLJUoFSxweuQSO3THm4hU6xuRZinwdcKWB4Ln08foPE2qvqn6g+2M3T9vVrOIlJ3OggWoykA
-      MZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKNVvR7ALuaY
-      W1oh2tVDYnePE52t7OUdzvb31XI+kZqqOgBPcwuRUJB0JovrOGQKZby4OI6jJZHSsKoOoLiX
-      JJbc53RvN7lEEoJN5IqOlkRKQ6v6pxoIRbl1LQpANBqt2UAi9aSDYDGaAhCjKQAxmgIQoykA
-      MZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAxWvXnCCvmmF9cJNASIp3J0t0Z
-      JJN3uHzxXC3nE6mpqgPwNjXRGuygDAx0thF3LNoCHi2JlIZW/ZLIbIa9fJ6+ni7iqQy9nUHS
-      BS2JlMZW/ZLIjghXOyIARLq6AeiszUxvnX/+3Xf86xfTxz3GK/vHv/8V50++nT9tHQSL0Z4b
-      QG4vxVp8m+c/shdpfM8NYHpqjN/8y79RqOc0InX23GOA06cvcfF6E031nEakzp67B7AsD17X
-      obGfwBR5sWcGkNtNMn7/PnOLqzj1nkikjp4ZQDDcQzTaiadoY9V7IpE6emYA+7tJCuUm/vrX
-      f0Og3hOJ1NEzA/A1N+O1YPzr23oWSN5qz3wWyOtrYfTDD/nA0gMgebs9MwBfc3O95xA5Fnor
-      hBhNAYjRFIAYreq3QzvlAqubKXpDAZYSuzpJnrwVqj9JXlMAv89DJpvTSfIOe/0XfG8agW3b
-      b+2KuEOtCd7YWOfUqVO4paJOkneY6zf408ler/etXRFX9Vb5/EFGRkYA6O3trdlAIvWkg2Ax
-      mgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMdqhlkTO
-      r24SDbewspHSSfLkrXCoJZHtwQDZfFknyTvs9bUk8o11qCWR29tJ+np7ie9mdZK8w1xfSyLf
-      WIdaEjk8PAxAd08PoJPkSePTQbAYTQGI0RSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEU
-      gBhNAYjRFIAYTQGI0Q4dQKWYY2ZukXwuQzKVrsVMInVz6FUOyY0NvIFWEsnHuI5LV7hdK8Je
-      dn2tCHtjHTqAjq4I64/maesOUyq5WhFWzfW1IuyNdeitau2IMPrh+7WYRaTudBAsRlMAYjQF
-      IEZTAGI0BSBGUwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBiNAUgRnvlAOKxFabnlo5yFpG6e+U3
-      eVfw0hrQDkQa2ysH0BZoIl1wjnIWeQvZtsOjle3jHuO5XjmAzu4TdMLTk+S9SE+ohV//4t1X
-      vatjN9gfwX7Bsk7XdV+46mv4fA9N3sZdFdYRbH7l7S9VbB7Mx2s12muz3CNYsOo4T06WZypt
-      f+Nu/5FMXY+Nd50CsViS3d3dP/vaznaChZXYk8u5LqVS6YfrlEmnszWfrd4/fMe2mZmaZL/w
-      ZDuLxeLTrz3r+1Nr9dr+QjbNzOwcpR/tjHK53GvdZsOsdHYps7meIBwNsrm+ir+pmXS+QGdP
-      H/nMDv6Wdh6O36bSHKJcLhNwc/hCUdr8bYRCbcc9/pFyHZv9XI7Mdpyv59eJtHrp6z3B5GKc
-      i2dPEg6Hj3vEmiiXStgurM5OsJEu0tsRxN8ewo3HKDseQqF28vtp4qkSH44MVXWbDRMAeDl3
-      /jTriQ2aLbAsD+fO9WM3ddEW8NHVGWEmu0Mw2EGpmMWyvTR5Pfj9zcc9+JGzLA/nLlyktL9H
-      d1eYrjY/hZJNdyREwB847vFqxuvz4XHKuE1BzpyK0B4MUikXyZeefHJHcjNOS0cnPmefCtX9
-      ch/JMYBIo2rMIxeRI6IAxGgKQIymAMRoCkCMdiCA+ekJxsbGmJpfPvI7cl2bLz//IzuZAk4u
-      xR8+/4rvHk6zPPGIfdclmUweuPyjicmnf0/vVfsx7C4LCwsALC0toae35GUOPFW6Ft/i448/
-      4X8+/4x2v4fT/f0sLS7h8/lIp3YJhgKkdzK0hHrojwR4OLdM3+lzeEq7JLbTDA7fZHXme0qe
-      IDeGLuO6Nt+NjeEJhukNVZhd2OLqCLj5Xbyh09wYGmDyq2/oBAr5ItmdBA9nVwlFuklurnGv
-      XCDU1ce9b/7I+cEb3LwxxOryMmfPDrCysopTyvE4XWD45k38XgCLFjfH5NwiO6k0JyJJJqaX
-      6D8/iJ3dIr6VYnD4BqnYEjmnmauXzx/LN13eHAf2AHZxn7GxMYKhHmKxNQCWl5aYeTjBwOV3
-      iW8+5satEZLry9x7OMv7773H6sIMyeQ2ZQfc9BJ3pzeZv3+Hx0XYmBwjdOEmwcIWbriP8+cH
-      6WwPAC4LM5M8eDT7wz27xNbWuTcxywcfjJLe3qCppYNbN2+yFVvl5MAFRm4M4QGaCylmY1ts
-      JHZIJhM4WHh/tBV9F4aYGrvN6OgNvvziK7xeD3fu3Ma2K1jkefBgmgeTc7w7qF9++UkAXn8r
-      o6OjvHdziGbLYezefXazBVpDXbQHmqBS4P74GBWPn0hbM9/evYvb1EIk0gn5FIvbLifCAc5d
-      uUabD8J9fczdv8NiskDowAuUFhcGr3LtyqUDw3QELL4du0dqL4fHsuDJH8J+D3fuPcQB+i5d
-      4+7vf8Pg8DCRzi5yj1dZ3dplanr+yS1bFl3RkwS8Fv39/TguXBseYn5uAa/PjweH6IkTeBr3
-      zZlyhA71SvBX39zmow9/VrNhNmPLxOJblC0/Pxu9XrP7Efk/eiuEGE1Pg4rRFIAYTQGI0RSA
-      GE0BiNEUgBjttQJwXbfhz4IuZnvtPcDLPhNI5E2mh0BiNAUgRlMAYjQFIEZTAGI0BSBGUwBi
-      tKoDcJ0yi0ur5LNpph5NU3b0Apg0vqo/HNfyNBEMNBEIttPWksJxwXEdbNvWq8HSsKoOwK0U
-      2djYYD+zR96GqAueH1aje73emg0oUkuvtSTSdV0cx1EA0rB0ECxGUwBiNAUgRlMAYjQFIEZT
-      AGK0/wUSRXalWGwQHgAAAABJRU5ErkJggg==
+      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
     </thumbnail>
-    <thumbnail height='192' name='Purpose of Flight vs. Year' width='192'>
+    <thumbnail height='192' name='Flight Purposes' width='192'>
       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
-      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
-      gg==
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Skydiving Engine Fatalities' width='192'>
+      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
+      ABLt35hNkSnSsB/uAAAAAElFTkSuQmCC
     </thumbnail>
     <thumbnail height='192' name='Skydiving Fatalities' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
