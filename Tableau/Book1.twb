@@ -1,0 +1,1604 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Aviation_data_clean' inline='true' name='federated.0sgqnh40fwq0du1fkepnz14dndrr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Aviation_data_clean' name='textscan.0vjrhus1uivtuw15g7u2j1oo3dxv'>
+            <connection class='textscan' directory='C:/Users/Greg/Desktop/flatiron/Project1' filename='Aviation_data_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0vjrhus1uivtuw15g7u2j1oo3dxv' name='Aviation_data_clean.csv' table='[Aviation_data_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Event ID' ordinal='0' />
+            <column datatype='string' name='Accident Number' ordinal='1' />
+            <column datatype='date' name='Event Date' ordinal='2' />
+            <column datatype='string' name='Location' ordinal='3' />
+            <column datatype='string' name='Country' ordinal='4' />
+            <column datatype='real' name='Latitude' ordinal='5' />
+            <column datatype='real' name='Longitude' ordinal='6' />
+            <column datatype='string' name='Injury Severity' ordinal='7' />
+            <column datatype='string' name='Aircraft Damage' ordinal='8' />
+            <column datatype='string' name='Aircraft Category' ordinal='9' />
+            <column datatype='string' name='Make' ordinal='10' />
+            <column datatype='string' name='Model' ordinal='11' />
+            <column datatype='integer' name='Number Of Engines' ordinal='12' />
+            <column datatype='string' name='Engine Type' ordinal='13' />
+            <column datatype='string' name='Purpose Of Flight' ordinal='14' />
+            <column datatype='integer' name='Total Fatal Injuries' ordinal='15' />
+            <column datatype='integer' name='Total Serious Injuries' ordinal='16' />
+            <column datatype='integer' name='Total Minor Injuries' ordinal='17' />
+            <column datatype='integer' name='Total Uninjured' ordinal='18' />
+            <column datatype='string' name='Weather Condition' ordinal='19' />
+            <column datatype='string' name='Broad Phase Of Flight' ordinal='20' />
+            <column datatype='string' name='Report Status' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0vjrhus1uivtuw15g7u2j1oo3dxv' name='Aviation_data_clean.csv' table='[Aviation_data_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Event ID' ordinal='0' />
+            <column datatype='string' name='Accident Number' ordinal='1' />
+            <column datatype='date' name='Event Date' ordinal='2' />
+            <column datatype='string' name='Location' ordinal='3' />
+            <column datatype='string' name='Country' ordinal='4' />
+            <column datatype='real' name='Latitude' ordinal='5' />
+            <column datatype='real' name='Longitude' ordinal='6' />
+            <column datatype='string' name='Injury Severity' ordinal='7' />
+            <column datatype='string' name='Aircraft Damage' ordinal='8' />
+            <column datatype='string' name='Aircraft Category' ordinal='9' />
+            <column datatype='string' name='Make' ordinal='10' />
+            <column datatype='string' name='Model' ordinal='11' />
+            <column datatype='integer' name='Number Of Engines' ordinal='12' />
+            <column datatype='string' name='Engine Type' ordinal='13' />
+            <column datatype='string' name='Purpose Of Flight' ordinal='14' />
+            <column datatype='integer' name='Total Fatal Injuries' ordinal='15' />
+            <column datatype='integer' name='Total Serious Injuries' ordinal='16' />
+            <column datatype='integer' name='Total Minor Injuries' ordinal='17' />
+            <column datatype='integer' name='Total Uninjured' ordinal='18' />
+            <column datatype='string' name='Weather Condition' ordinal='19' />
+            <column datatype='string' name='Broad Phase Of Flight' ordinal='20' />
+            <column datatype='string' name='Report Status' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Event ID]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Event ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accident Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Accident Number]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Accident Number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Event Date]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Event Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injury Severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Injury Severity]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Injury Severity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft Damage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aircraft Damage]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Aircraft Damage</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aircraft Category]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Aircraft Category</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Make</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Make]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Make</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number Of Engines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number Of Engines]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Number Of Engines</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engine Type]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Engine Type</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Purpose Of Flight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Purpose Of Flight]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Purpose Of Flight</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Fatal Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Fatal Injuries]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Total Fatal Injuries</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Serious Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Serious Injuries]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Total Serious Injuries</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Minor Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Minor Injuries]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Total Minor Injuries</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Uninjured</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Uninjured]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Total Uninjured</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather Condition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weather Condition]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Weather Condition</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Broad Phase Of Flight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Broad Phase Of Flight]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Broad Phase Of Flight</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Report Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Report Status]</local-name>
+            <parent-name>[Aviation_data_clean.csv]</parent-name>
+            <remote-alias>Report Status</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Injury Severity]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Aviation_data_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' role='measure' type='quantitative' />
+      <column-instance column='[Injury Severity]' derivation='None' name='[none:Injury Severity:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Greg/AppData/Local/Temp/TableauTemp/#TableauTemp_1t84zip0nzg7os1ex3ocz0qfg1zf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/30/2024 06:23:37 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Event ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21448</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accident Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Accident Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Accident Number</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21448</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Event Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6051</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5111</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4421</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4421</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Injury Severity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Injury Severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Injury Severity</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft Damage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aircraft Damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft Damage</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aircraft Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft Category</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Make</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Make]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Make</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>640</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1919</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number Of Engines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number Of Engines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number Of Engines</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Engine Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine Type</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Purpose Of Flight</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Purpose Of Flight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Purpose Of Flight</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Fatal Injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Fatal Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Fatal Injuries</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Serious Injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Serious Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Serious Injuries</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Minor Injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Minor Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Minor Injuries</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Uninjured</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Uninjured]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Uninjured</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>218</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weather Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weather Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weather Condition</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Broad Phase Of Flight</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Broad Phase Of Flight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Broad Phase Of Flight</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Report Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Report Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Report Status</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Aviation_data_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7467</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Injury Severity:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fatal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Minor&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Unavailable&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Incident&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Serious&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Non-Fatal&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Aviation_data_clean.csv' id='Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0'>
+            <properties context=''>
+              <relation connection='textscan.0vjrhus1uivtuw15g7u2j1oo3dxv' name='Aviation_data_clean.csv' table='[Aviation_data_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Event ID' ordinal='0' />
+                  <column datatype='string' name='Accident Number' ordinal='1' />
+                  <column datatype='date' name='Event Date' ordinal='2' />
+                  <column datatype='string' name='Location' ordinal='3' />
+                  <column datatype='string' name='Country' ordinal='4' />
+                  <column datatype='real' name='Latitude' ordinal='5' />
+                  <column datatype='real' name='Longitude' ordinal='6' />
+                  <column datatype='string' name='Injury Severity' ordinal='7' />
+                  <column datatype='string' name='Aircraft Damage' ordinal='8' />
+                  <column datatype='string' name='Aircraft Category' ordinal='9' />
+                  <column datatype='string' name='Make' ordinal='10' />
+                  <column datatype='string' name='Model' ordinal='11' />
+                  <column datatype='integer' name='Number Of Engines' ordinal='12' />
+                  <column datatype='string' name='Engine Type' ordinal='13' />
+                  <column datatype='string' name='Purpose Of Flight' ordinal='14' />
+                  <column datatype='integer' name='Total Fatal Injuries' ordinal='15' />
+                  <column datatype='integer' name='Total Serious Injuries' ordinal='16' />
+                  <column datatype='integer' name='Total Minor Injuries' ordinal='17' />
+                  <column datatype='integer' name='Total Uninjured' ordinal='18' />
+                  <column datatype='string' name='Weather Condition' ordinal='19' />
+                  <column datatype='string' name='Broad Phase Of Flight' ordinal='20' />
+                  <column datatype='string' name='Report Status' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='All Other Fatalities'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Aviation_data_clean' name='federated.0sgqnh40fwq0du1fkepnz14dndrr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0sgqnh40fwq0du1fkepnz14dndrr'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Injury Severity]' role='dimension' type='nominal' />
+            <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column datatype='integer' name='[Number Of Engines]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Purpose Of Flight]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Fatal Injuries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Minor Injuries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Serious Injuries]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Aviation_data_clean.csv' datatype='integer' name='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Uninjured]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='Aviation_data_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Latitude]' derivation='Avg' name='[avg:Latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude]' derivation='Avg' name='[avg:Longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Injury Severity]' derivation='None' name='[none:Injury Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Purpose Of Flight]' derivation='None' name='[none:Purpose Of Flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number Of Engines]' derivation='Sum' name='[sum:Number Of Engines:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Fatal Injuries]' derivation='Sum' name='[sum:Total Fatal Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Minor Injuries]' derivation='Sum' name='[sum:Total Minor Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Serious Injuries]' derivation='Sum' name='[sum:Total Serious Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Uninjured]' derivation='Sum' name='[sum:Total Uninjured:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[avg:Latitude:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[avg:Longitude:qk]' included-values='non-null' />
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Country:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Country:nk]' />
+              <groupfilter function='except'>
+                <groupfilter function='level-members' level='[none:Country:nk]' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;United States&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Non-Fatal&quot;</bucket>
+              <bucket>&quot;Fatal&quot;</bucket>
+              <bucket>&quot;Incident&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Purpose Of Flight:nk]' />
+              <groupfilter function='member' level='[none:Purpose Of Flight:nk]' member='&quot;Skydiving&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Number Of Engines:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Fatal Injuries:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Minor Injuries:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Serious Injuries:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Uninjured:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Number Of Engines:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Fatal Injuries:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Minor Injuries:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Serious Injuries:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Uninjured:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[:Measure Names]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Country:nk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[avg:Latitude:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[avg:Longitude:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]' value='98' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[Multiple Values]</rows>
+        <cols>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]</cols>
+      </table>
+      <simple-id uuid='{CD7214CC-AE04-461E-A0C5-33E8353CC979}' />
+    </worksheet>
+    <worksheet name='Purpose of Flight vs. Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Aviation_data_clean' name='federated.0sgqnh40fwq0du1fkepnz14dndrr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0sgqnh40fwq0du1fkepnz14dndrr'>
+            <column datatype='date' name='[Event Date]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Aviation_data_clean.csv' datatype='integer' name='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Purpose Of Flight]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Aviation_data_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Purpose Of Flight]' derivation='None' name='[none:Purpose Of Flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event Date]' derivation='Year' name='[yr:Event Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]'>
+            <groupfilter function='member' level='[none:Purpose Of Flight:nk]' member='&quot;Skydiving&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' />
+              <lod column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]</rows>
+        <cols>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[yr:Event Date:ok]</cols>
+      </table>
+      <simple-id uuid='{881FD0C4-72D7-44C4-A6E4-8BB7A3A2E89F}' />
+    </worksheet>
+    <worksheet name='Skydiving Fatalities'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Aviation_data_clean' name='federated.0sgqnh40fwq0du1fkepnz14dndrr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0sgqnh40fwq0du1fkepnz14dndrr'>
+            <column datatype='string' name='[Accident Number]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Injury Severity]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Purpose Of Flight]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Fatal Injuries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Minor Injuries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Serious Injuries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Uninjured]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Injury Severity]' derivation='None' name='[none:Injury Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Purpose Of Flight]' derivation='None' name='[none:Purpose Of Flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Fatal Injuries]' derivation='Sum' name='[sum:Total Fatal Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Minor Injuries]' derivation='Sum' name='[sum:Total Minor Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Serious Injuries]' derivation='Sum' name='[sum:Total Serious Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Uninjured]' derivation='Sum' name='[sum:Total Uninjured:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Fatal Injuries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Minor Injuries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Serious Injuries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Uninjured:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;United States&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Accident Number])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:Injury Severity:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Injury Severity:nk]' member='%null%' />
+                    <groupfilter function='member' level='[none:Injury Severity:nk]' member='&quot;Incident&quot;' />
+                    <groupfilter function='member' level='[none:Injury Severity:nk]' member='&quot;Unavailable&quot;' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Non-Fatal&quot;</bucket>
+              <bucket>&quot;Fatal&quot;</bucket>
+              <bucket>&quot;Incident&quot;</bucket>
+              <bucket>&quot;Serious&quot;</bucket>
+              <bucket>&quot;Minor&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]'>
+            <groupfilter function='member' level='[none:Purpose Of Flight:nk]' member='&quot;Skydiving&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Fatal Injuries:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Minor Injuries:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Serious Injuries:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Uninjured:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[:Measure Names]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Fatal Injuries:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Minor Injuries:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Serious Injuries:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[sum:Total Uninjured:qk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</column>
+            <column>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[Multiple Values]</rows>
+        <cols>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]</cols>
+      </table>
+      <simple-id uuid='{48B03E35-DE7F-49DA-B96C-F550525A10BD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='Aviation_data_clean' name='federated.0sgqnh40fwq0du1fkepnz14dndrr' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0sgqnh40fwq0du1fkepnz14dndrr'>
+        <column caption='Aviation_data_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' role='measure' type='quantitative' />
+        <column-instance column='[__tableau_internal_object_id__].[Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49217' id='9' param='horz' type-v2='layout-flow' w='99318' x='341' y='635'>
+            <zone h='49217' id='7' type-v2='layout-basic' w='92507' x='341' y='635'>
+              <zone h='49217' id='3' name='Skydiving Fatalities' w='46254' x='341' y='635'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49217' id='5' name='All Other Fatalities' w='46253' x='46595' y='635'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='49217' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='6811' x='92848' y='635'>
+              <zone h='5476' id='10' name='Purpose of Flight vs. Year' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='6811' x='92848' y='635'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5159' id='11' name='Purpose of Flight vs. Year' pane-specification-id='0' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' type-v2='color' w='6811' x='92848' y='6111'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='49513' id='6' name='Purpose of Flight vs. Year' w='99318' x='341' y='49852'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98730' id='12' param='vert' type-v2='layout-flow' w='99318' x='341' y='635'>
+                <zone fixed-size='267' h='49217' id='3' is-fixed='true' name='Skydiving Fatalities' w='46254' x='341' y='635'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='267' h='49217' id='5' is-fixed='true' name='All Other Fatalities' w='46253' x='46595' y='635'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5476' id='10' name='Purpose of Flight vs. Year' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='6811' x='92848' y='635'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='269' h='49513' id='6' is-fixed='true' name='Purpose of Flight vs. Year' w='99318' x='341' y='49852'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5159' id='11' name='Purpose of Flight vs. Year' pane-specification-id='0' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' type-v2='color' w='6811' x='92848' y='6111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AD0E8940-671F-4B88-B1D9-0BCE31A7F016}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Skydiving Fatalities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Country:nk]</field>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]</field>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C992CE1D-82E1-4797-8360-8240E8B45EC8}' />
+    </window>
+    <window class='worksheet' name='All Other Fatalities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Country:nk]</field>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Injury Severity:nk]</field>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{414E24BC-02B8-4EED-A5E3-5974545E2321}' />
+    </window>
+    <window class='worksheet' name='Purpose of Flight vs. Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0sgqnh40fwq0du1fkepnz14dndrr].[__tableau_internal_object_id__].[cnt:Aviation_data_clean.csv_948EFA57C20F4E429497C92765241CB0:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[none:Purpose Of Flight:nk]</field>
+            <field>[federated.0sgqnh40fwq0du1fkepnz14dndrr].[yr:Event Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{64B1567E-83C7-4A69-B136-D46CCF1B4651}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='All Other Fatalities'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Purpose of Flight vs. Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Skydiving Fatalities'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{FFE22EE3-06A0-4786-914D-48F8F4F075FC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='All Other Fatalities' width='192'>
+      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
+      4GpCKgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AGK0/wUSRXalWGwQHgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Purpose of Flight vs. Year' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAN1UlEQVR4nO3dSZMcx3kG4Dez9l5mxyJiCC7iYgdBiGaEw+GQQo7wwTcd7P/g3ybJB/8A
+      +2BLjpBCIVpBhygQJCGCxg7M3lvtmTo0ejgzXdNd2TPTUz31PhcEetCNPtQ7mVWZX35Ca61B
+      VFPysr8A0WViAKjWGACqNQaAao0BoFqzZ3kTHxzRVTFTAABAKQWlFIQQ5/l9iOaqVABUFuPB
+      w6e4dWMVD797ig/u3IEjJYQQkJKzKFpcpa5eaXtYagXwgwBK5eAMiK6KciNAGmJ7Zwe5UvCb
+      LVic9dAVIWbdCqG1htaaUyBaaLx6qdYYAKo1BoBqjQGgWmMAqNYYAKo1BoBqjQGgWmMAqNYY
+      AKo1BoBqjQGgWmMAqNYYAKq1UgFQWYyH3z1Gv7OH+/e/RsqCGLoiShXESNtD4NkIGi00Gz1A
+      a+Qqh9YaSqmL/o5EF6Z0RdjzFy/Q7/eQKgFoAcuyWBBDC48VYVRrvHqp1hgAqjUGgGqNAaBa
+      YwCo1hgAqjUGgGqNAaBaYwCo1hgAqjUGgGqNAaBaYwCo1hgAqjUGgGqNAaBaKxUArTWiKIJW
+      ClEcX/R3IpqbUiWROk/x6PFT3L51Ay+29vDW7U3WA9OVUG4KJATyNEaaa4SDHnJe93RFlBoB
+      BASu37gBIUZ/4rBJNmuCaZGxKJ5qjVcv1RoDQLXGAFCtMQBUawwA1RoDQLXGAFCtMQBUawwA
+      1RoDQLXGAFCtMQBUawwA1RoDQLXGAFCtMQBUa6UbZT/49v/R2d3CF/e+Qs5G2XRFlG6U3Qpc
+      dAYx3lxroJdqNCUbZVN1vNrr43f3nuBnP/7Q6H2lG2W/2trC9evX8KwzwIc3BATYKJuq4+Ve
+      H18+2sI//8NHRu8rNwI4Ae7evQsAuHlz+NpslcREF2P7YIBemBi/j7++6UrY64XoR6nx+xgA
+      uhJ2OyH6YQLTQ04YALoSdjshACBXDADVUJRkaAUuMsNjCxkAuhLSPEczcJEbPpZnAGjhpVkO
+      rYHAc5BmudF7GQBaeP0oRStw0fAdhHFm9N5S6wBEVdYLE7QbHnzXxsDwUSgDQAvvoBdhpeXD
+      tiT6kdliGANAC2+3G2K1HUBpje7ALAC8B6CFt9MZYGOliVbgYhCbTYEYAFp4B70YK00fLd/l
+      FIjqZzgF8pHlOULDEYABoIU3iIePQcMkQ9dwRyinQLTwkjSH59jwHRtxwoUwqpFcKWRKwbEl
+      fNdCnJothBkFIEtCPH+5bfQfEF2kMM4QuA6EEPBcG3FqNgIY3QM8f/oEL15uo722jkAqKKVY
+      E0yXqtOP0AocZFkGRwpESYYsKz8KGAVg49o17OwP4FqAFBJCCAghjL800XnpRymWmj4sy4Jl
+      DV+T0kLZy9IoAH5zGXc/uQspxGHlDQNAl2m3G2GtHRxeh7YlkSkF17ZKvd8oAEII8HKnKtnt
+      hlhbCg7/blkSyqAqjE+BaKF1+hFWW/7h3x1LGlWFMQC00PZ6MVba348Arm0hMSiKYQBooXX6
+      MZYa7uHfm4HZfiAGgBZakit4zve3sk3fNSqKYQBoYWmtkeX5sSc+zcAxOiCLAaCFFaU5XNuG
+      lN8/m2x4jtGOUAaAFlY/TNDwjz/JbwUueiEDQDXQj1IsNbxjrzU8B2HCAFAN7PciLDf9Y681
+      fIc3wVQPO90Q60dWgYHhCDAwOBuIAaCF1enHWGkdHwF81zaqCWAAaGHtFwTAcywkBjUBDAAt
+      rE4/xvKJm2DXsbkVguohznJ47vFtz55jIc1V6UYZDAAtJK014jSH54zv+7ekLN0ogwGghZRm
+      CraUsAq6lEopSvcJMArA9stn+OKPf0LMMmC6ZIM4RcN3Cn9mGxTFGFWE5VmGLE2glEYONsqm
+      y9MdxGh4dmEBvG1JREkKx5pev2gUgFa7jcYghSMFLMFG2XR5elGK5ZYP2x6/hJu+gyTThT87
+      ySgAzaVVfLC0CoCNsuly7b0+ELdIwyt/SjR/fdNCOujHWGufFgAbYVJuNZgBoIW014+w0vIK
+      fzYsi+QIQFdYd5CMbYUeCVwb0VmmQKbt5onmLUpyBF7xLWzDL78jtDAALx59i1/9+rcwazVA
+      ND9xmsN3igMQuGe8B0jSFNK2Ue5wOaL5Gh18ZVvFM3iTXmGFn7D18gW++dOXMOu1QTQfYZKd
+      Ov0BhodjlT0mvfBTrr3xNv7p5lu8Q6ZKCuMMDa94GwRgVhNQeI17tsKDx894EC5VUjdM0D5y
+      GtxJnmsjLlkTUDgCrG7cxAfwGACqpIN+jOVm8SNQAPBenw+qtZ56fH/hCPD5Z7/D42cvz/Yt
+      iS7Ibi/CWqt4FRjA4UFZZTaEFgbAdzU+++wLcJ8nVVFnkBw7ELeIJWWpncqFU6Cl9TeweaM/
+      27cjumCdQYKVCVMg4HVNQIkF3cIRYNDdhuW0wfVgqqJBkp1aDDNiSYE8nyEASuVYWtmA5UtM
+      /i+ILkdySi3wUZ5TrmXqWADCzh7+eO/PsFXKhTCqHKU0cqXhnLIKPNLwHQxKnBE69inNlQ18
+      8O5tWJ4LnEhQZ28b9+9/BcNu9ETnJkozeI419fFmw7URlbhQC2+C3/vrj/HWO9v4+qvn+OjO
+      5uHrS6vr6PRC2FIjz1kTTPPXCxP4jjW1GbbnWOgO4qn/rjAAaRLhoBNheaVx7PU8jWB7DUgh
+      ICzWBNP8RWmIdsObWu/bClwkuZr674oXwn7/a/zbz/8TG5trx163nAA3r68bfmWi83MwmLwK
+      PDLsFDN9S/RYALRWaK9u4pMfvcetEFQ5+70YK83Ji2DA8JToaJanQNAZnnz3ELHlmh0ZQTQH
+      nXC8K0yRpm+XqgkYC4CQLpaXXXz5h3usCKPKGa4CTx8BZl4H6O9voxMKrP9ghRVhVDn9OEVz
+      Qi3AiOuU6xg/Nstprmzg+uoS4khxKwRVzmknQp803BI942a4O5/+Ld6P9rH1dA+3bq2af0ui
+      CzBsjK3hlgmAU64ssvAxqBAClsixv88doVQdSabg2BJyyiow8P1u0GlH/BSOAF9/8X/Y7af4
+      0aefzPZNiS5AlGSlpj8jlhTIlYY94ZTowgBEYQ87uzGcU85dIboM/ThDO5j+BGjEktNrAgqn
+      QFGSQ2QxuOeNqmS/H08thDnKkmJqo4yCeoAIFgQ6UcZjUahS9vsJlqeUQh7llngSNL4QBgs7
+      +138YG2ZNcFUKd1wei3wUUGJY9LHf8kLCzdvrCIVFhfCqFI6YWo0AgSug8g0AEJISFvi+cNH
+      HAGoUvpxiqZf/sHMTCOAUhGgXNx+/23uBqVKiVMFzy4/L/Eda+qO0LEASOljfb2Nfo+LYFQd
+      WmtkSpVaBR5plqgJKHzQk+cKzVbT7BsSXaAkU3Asq9Qq8IjnzjAC7Dz+Bv/xP7/F7v5g7CZ4
+      79UzfPXn73hvQHM33ARn9mA+cG1EqWFN8Nrme/iXn63gwYNHyHE8Id1eD3G3h178JhqWZlE8
+      zU0vTBC4xY2xT+NaAmGcTXzPWAB2Hn2L//78Hn741jtjN8FvbN5G/uwVWq4FAc2ieJqbfpJj
+      uTm9GP6owHOQqskNs8d+sn77XXy0v4cnewdj8yPb9fHO27cBsFE2zVcnTLE05TjEk1zbQmq8
+      EiwEsiyHCiOUH2yILlY3TI1WgYFyVWGFY8OHH/8N3leKRfFUGZ0wwQ9vLhm9x7EkcqUnNsoo
+      WAiL8e8//yV+9V+/4QhAldGLMrQMVoFHpBATt0SPfaKUHj6++1fopTZ3g1JlxFlutAo8IqSA
+      0jh1X1vhNe56ZnMtoouktUaaKaNqsBF7Sk1AYQCWllew9fQZp0BUCZnSEFLAkua706zX9wGn
+      KQxA2N1HTwtwHKAqiNPZpj8AEDiTV4MLA/Bq5wBLjuTJcFQJUZqjMaEz/CS+a03sEzD2qQcv
+      nuLdu5/Ce/Atb4KpEoZPgGZr2OU71sSm2WMBsGyNz/7wOVSmcGem/5LofHXDFO1gtgAMi2IM
+      AtDa2MQ//vQWALAghiqhG6VYmjEA/pRDck89GW5aDyaieTlTAKbUBHCaT5V3lnuA4SG5DAAt
+      sChT8O3ZLtXAnXwPwABQ5ZU9Er2Ia8uJh2MxAFRp+euKQ3tKY+zTuLZEmp9TAOLeHu5/85Bn
+      htLcJJnZUSgnubY1MQBGy2vdgy60ALTSyBUbZdPF60cpXEca1QIfJQWQZPmp7zcKgN9qQe0+
+      Q6YFPDbKpjk4iEKst8xqgU8SQkBKC7JgM53Rp7aW1/DRx8Pm2awJpnnY6sS4vuSf6TNGRTGy
+      YGmXv76p0ra60dkDIMWpDR8ZAKq0XpyjPeMi2MikRhkMAFVWliukmYJveCLcSZNapjIAVFlh
+      mqPhWWfel+ZN2BLNAFBl7fUTrBr0BDuNP6FnMANAlbXViXGtfT4BCBkAWjRbvfMJgOfyHoAW
+      UDecvQ7gKE6BaOHkSiPOFRru2Vs18ikQLZwozRE4Z38CBLzuFcanQLRIDgxbok4yqSaAAaBK
+      2ukl2Gid/QYYmFwTwABQJW2f0xMgAHAtC2nOrRC0QA4GKZYbZ38CBAAOp0C0SJTWiLIcjRnr
+      gE+yXu8G1QV7+BkAqpw4VXAsWVjAMispRGENi3EAilJEdJ66UYrlc1gAO0oIFHaKMaoIy9MI
+      v/n95/jJ3//d4WsMBJ3UjTK0Z2hnNLLTT7DR9s712jptGmT0LZ8/eYw8z14PUYBSikco0jHd
+      KMMv/vc5/vXHb878GdvdGJurPvL8/M4fkUIgSTOIEwds/QWEHnkE07nCkQAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Skydiving Fatalities' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
