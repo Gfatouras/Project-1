@@ -29,6 +29,9 @@ United States and international waters.
 ### All flight purposes vs. skydiving
 ![image](https://github.com/Gfatouras/Project-1/assets/165408353/47120ee2-5a69-4e8c-9e50-b283d75877a5)
 
+### Tableau Public dashboard
+![image](https://github.com/Gfatouras/Project-1/assets/165408353/95db0388-b627-4004-aa6e-e10eb155c267)
+
 # Conclusion
 ## Airplane Business Flights
 Models to consider:
